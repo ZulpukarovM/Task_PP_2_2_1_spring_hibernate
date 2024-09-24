@@ -1,6 +1,5 @@
 package hiber.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -19,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "users")
 
-@AllArgsConstructor()
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -43,9 +42,11 @@ public class User {
     @Cascade(CascadeType.ALL)
     private Car car;
 
-    public User(String firstName, String lastName, String email) {
+
+    public User(String firstName, String lastName, String email, Car car) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.car = car;
     }
 }
