@@ -21,18 +21,12 @@ public class MainApp {
             Car carExample = new Car("Priora", 2000);
             Car carExample2 = new Car("Priora", 2000);
             Car carExample3 = new Car("Priora", 2000);
-            Car carExample4 = new Car("Lada", 2107);
-            Car carExample5 = new Car("Lada", 2107);
-            Car carExample6 = new Car("Lada", 2107);
-            Car carExample7 = new Car("Lada", 2107);
+
 
             carService.add(carExample);
             carService.add(carExample2);
             carService.add(carExample3);
-            carService.add(carExample4);
-            carService.add(carExample5);
-            carService.add(carExample6);
-            carService.add(carExample7);
+
 
             User userExemple1 = new User("Магомед", "Зулпукаров", "pochta@mail.ru", carExample);
             User userExemple2 = new User("Магомед", "Зулпукаров", "pochta@mail.ru", carExample2);
