@@ -28,7 +28,7 @@ public class UserDaoImp implements UserDao {
     @Override
     @SuppressWarnings("unchecked")
     public List<User> listUsers() {
-        String hql = "from User u  join fetch u.car c ";
+        String hql = "from User u left join fetch u.car c ";
         TypedQuery<User> query = sessionFactory.getCurrentSession().createQuery(hql);
         return query.getResultList();
     }
